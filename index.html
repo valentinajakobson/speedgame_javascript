@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Speedgame</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="gamebody">
+
+    <h1 class="gamename">Speedgame</h1>
+
+    <h1 class="score">Your score <span id="score"></span></h1>
+    <div class="circles">
+      <div class="circle" id="0"></div>
+      <div class="circle" id="1"></div>
+      <div class="circle" id="2"></div>
+      <div class="circle" id="3"></div>
+    </div>
+    <div class="buttons">
+      <button type="button" name="button" onclick=startNext()>Start game</button>
+      <button type="button" name="button" onclick=gameOver()>Stop game</button>
+    </div>
+    <div id="result">
+      <div class="popup">
+        <i class="far fa-times-circle" onclick=window.location.reload()></i>
+        <h2 id="gameover">GAME OVER</h2>
+        <p>Last score <span id="finalscore">0</span></p>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js">
+    </script>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(61deg, rgba(2, 0, 36, 1) 0%, rgba(12, 101, 0, 0) 0%, rgba(0, 212, 255, 1) 100%);
+  /* background-image: linear-gradient(to top right, #fcfbc4, #fceb00); */
+  background-attachment: fixed;
+}
+
+.gamebody {
+  margin: 100px auto;
+}
+
+.gamename {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+
+#score {
+  font-family: 'VT323', monospace;
+  font-weight: 500;
+  font-size: 25px;
+  color: black;
+  margin-top: 100px;
+  text-align: center;
+}
+
+#finalscore, .popup p {
+  font-family: 'VT323', monospace;
+  font-weight: 500;
+  font-size: 25px;
+  color: black;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.score {
+  font-family: 'VT323', monospace;
+  font-weight: 500;
+  font-size: 25px;
+  color: black;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.circle {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  background-color: grey;
+  margin: 40px 20px;
+  box-shadow: inset 0 0 2px black;
+}
+
+.circle:active {
+  box-shadow: inset 0 0 5px #333;
+}
+
+.circles {
+  text-align: center;
+}
+
+button {
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  background-color: #55FF0D;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+  padding: 15px;
+  border: none;
+}
+
+.buttons {
+  text-align: center;
+}
+
+#result {
+  position: fixed;
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  visibility: hidden;
+}
+
+.popup {
+  height: 250px;
+  width: 400px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 150px;
+  position: relative;
+}
+
+#gameover {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 60px;
+  padding-right: 15px;
+}
+
+i {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 30px;
+  margin: 10px;
+}
